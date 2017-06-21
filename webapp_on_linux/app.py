@@ -1,7 +1,7 @@
 import os
 APP_ID  = os.environ.get("APP_ID", "AzureWorkshop201706")
 APP_HOST  = os.environ.get("APP_HOST", "0.0.0.0")
-APP_PORT  = os.environ.get("APP_PORT", 5000)
+APP_PORT  = os.environ.get("APP_PORT", 80)
 DEBUG  = [True, False][int(os.environ.get("DEBUG", 0))]
 
 try:
