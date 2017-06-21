@@ -4,23 +4,14 @@
     <title>{{title}}</title>
   </head>
   <body>
-      <h2>{{text.content}}!</h2>
       <ul>
+        {% for text in data %}
         <li>
           <h2>
-            Hello! Flask!
+            {{text}}
           </h2>
         </li>
-        <li>
-          <h2>
-            Flask is awesome!
-          </h2>
-        </li>
-        <li>
-          <h2>
-            Flask is the best!
-          </h2>
-        </li>
+        {% endfor %}  
       </ul>
   </body>
 </html>

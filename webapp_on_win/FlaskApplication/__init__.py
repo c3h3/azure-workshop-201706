@@ -11,10 +11,10 @@ def home():
 
 @app.route('/test')
 def test():
-    text = { 'content': 'TEST' } 
+    sample_data = ["Hello! Flask!", "Flask is awesome!", "Flask is the best!"] 
     return render_template("home.html",
         title = 'TEST',
-        text = text)
+        data = sample_data)
 
 
 app.debug = True
