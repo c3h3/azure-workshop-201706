@@ -11,7 +11,9 @@ def home():
 
 @app.route('/test')
 def test():
-    sample_data = ["Hello! Flask!", "Flask is awesome!", "Flask is the best!"] 
+    sample_data = [{"text":"Hello! Flask!"}, 
+                   {"text":"Flask is awesome!"}, 
+                   {"text":"Flask is the best!"}]
     return render_template("home.html",
         title = 'TEST',
         data = sample_data)

@@ -5,10 +5,10 @@
   </head>
   <body>
       <ul>
-        {% for text in data %}
+        {% for raw in data %}
         <li>
           <h2>
-            {{text}}
+            {{raw["text"]}}
           </h2>
         </li>
         {% endfor %}  
