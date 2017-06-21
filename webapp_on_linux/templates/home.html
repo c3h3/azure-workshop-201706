@@ -3,6 +3,16 @@
     <title>{{title}}</title>
   </head>
   <body>
+    <h1>Sign Me</h1>
+<form action='/submit' method='post'>
+  <label for='name'>Name</label>
+  <input name='name' type='text'></input>
+
+  <label for='message'>Message</label>
+  <input name='message' type='text'></input>
+
+  <input type='submit'></input>
+</form>
     <p>Hello! This is {{app_id}}! (Trigger Docker x4!)</p>
     <hr>
     <ul>
