@@ -4,5 +4,15 @@
   </head>
   <body>
     <p>Hello! This is {{app_id}}! (Trigger Docker x4!)</p>
+    <hr>
+    <ul>
+        {% for raw in data %}
+        <li>
+          <h2>
+            {{raw["text"]}}
+          </h2>
+        </li>
+        {% endfor %}  
+    </ul>
   </body>
 </html>
