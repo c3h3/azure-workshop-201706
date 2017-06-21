@@ -9,6 +9,13 @@ def home():
         title = 'Home',
         text = text)
 
+@app.route('/test')
+def test():
+    text = { 'content': 'TEST' } 
+    return render_template("home.html",
+        title = 'TEST',
+        text = text)
+
 
 app.debug = True
 if __name__ == "__main__":
