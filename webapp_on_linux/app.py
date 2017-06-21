@@ -1,7 +1,7 @@
 import os
 APP_ID  = os.environ.get("APP_ID", "AzureWorkshop201706")
-HOST  = os.environ.get("HOST", "0.0.0.0")
-PORT  = os.environ.get("PORT", 5000)
+APP_HOST  = os.environ.get("APP_HOST", "0.0.0.0")
+APP_PORT  = os.environ.get("APP_PORT", 5000)
 DEBUG  = [True, False][int(os.environ.get("DEBUG", 0))]
 
 try:
@@ -22,4 +22,4 @@ def index():
 
 if __name__ == "__main__":
     app.debug = DEBUG
-    app.run(host=HOST, port=PORT)
+    app.run(host=APP_HOST, port=APP_PORT)
