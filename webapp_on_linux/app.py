@@ -3,6 +3,8 @@ APP_ID  = os.environ.get("APP_ID", "AzureWorkshop201706")
 APP_HOST  = os.environ.get("APP_HOST", "0.0.0.0")
 APP_PORT  = int(os.environ.get("APP_PORT", 80))
 DEBUG  = [True, False][int(os.environ.get("DEBUG", 0))]
+MONGODB_URI = os.environ.get("MONGODB_URI", "mongodb://")
+DB = os.environ.get("DB", "az")
 
 # Variables about linebot
 CHANNEL_SECRET  = os.environ.get("CHANNEL_SECRET", "")
