@@ -46,8 +46,13 @@ service = BlockBlobService(account_name=AZURE_STORAGE_ACCOUNT,
 service.create_container(APP_ID)
 con = list(filter(lambda con:con.name == APP_ID,service.list_containers()))[0]
 
+from pymongo import MongoClient
 
-import datetime, hashlib
+mcli = MongoClient(MONGODB_URI)
+db = mcli[DB]
+
+import datetime, hashlib, json
+from datetime import datetime
 
 @app.route('/')
 def index():

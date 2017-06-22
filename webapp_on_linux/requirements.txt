@@ -1,1 +1,4 @@
 flask
+azure-storage
+line-bot-sdk
+pymongo
